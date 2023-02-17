@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="499.0" prefWidth="883.0" style="-fx-background-color: #b2bec3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TimeConvertorController">
+   <children>
+      <ImageView fitHeight="563.0" fitWidth="872.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/time-clock-hourglass-hour.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="424.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Convertor">
+         <font>
+            <Font name="Lucida Fax Regular" size="53.0" />
+         </font>
+      </Text>
+      <Label layoutX="437.0" layoutY="122.0" prefHeight="52.0" prefWidth="136.0" style="-fx-background-color: black;" text="  Input Days" textFill="WHITE">
+         <font>
+            <Font name="MS UI Gothic" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputDays" layoutX="616.0" layoutY="122.0" prefHeight="52.0" prefWidth="218.0">
+         <font>
+            <Font name="MS UI Gothic" size="25.0" />
+         </font></TextField>
+      <Button layoutX="537.0" layoutY="410.0" mnemonicParsing="false" onAction="#convertOnAction" prefHeight="67.0" prefWidth="208.0" style="-fx-background-color: black;" text="      Convert" textFill="WHITE">
+         <font>
+            <Font name="Lucida Bright Demibold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblHours" layoutX="612.0" layoutY="193.0" prefHeight="52.0" prefWidth="218.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="429.0" layoutY="188.0" prefHeight="62.0" prefWidth="144.0" text="Hours     :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="250.0" prefHeight="52.0" prefWidth="136.0" text="Minutes  :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMinutes" layoutX="612.0" layoutY="250.0" prefHeight="52.0" prefWidth="218.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="302.0" prefHeight="52.0" prefWidth="136.0" text="Second   :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSecond" layoutX="612.0" layoutY="302.0" prefHeight="52.0" prefWidth="218.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="549.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/on-time-icon-6.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
